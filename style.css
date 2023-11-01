@@ -1,0 +1,109 @@
+/* Estilos gerais */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ 
+
+header {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header li {
+  margin-left: 15px;
+}
+
+
+
+a {
+  color: hsl(59, 65%, 52%); /* cor do texto */
+  text-decoration: none; /* remove sublinhado */
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(19, 18, 18, 0.2);
+}
+
+a:hover {
+  text-decoration: underline; /* adiciona sublinhado ao passar o mouse */
+}
+
+/*logo*/
+
+.logo {
+  display: block;
+  margin: 150px auto 90px;
+  width: 200px;
+}
+.logo-central {
+  width: 300px;
+  max-width: 300px;
+}
+input[type="text"] {
+  margin-top: 50px;
+}
+
+main {
+  text-align: center;  
+}
+
+
+ /* estilos caixa de pesquisa */
+
+ input[type="text"] {
+  width: 600px;
+  line-height: 40px;
+  padding: 0 15px;
+  border: 1px solid #b6b2b2;
+  border-radius: 15px;
+  font-size: 16px;
+}
+input[type=text] {
+  color: #777; /* cor cinza para texto */
+}
+
+input[type=text]:focus {
+  color: #050505; /* preto quando clica na caixa */
+}
+
+ /* estilos botão pesquisa */
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #ebf746;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex; 
+  flex-direction: column;
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.search-container input[type=text] {
+  margin-bottom: 0px;
+}

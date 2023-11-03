@@ -53,7 +53,20 @@ input[type="text"] {
 main {
   text-align: center;  
 }
+  /* corpo */
+.container {
+  position: relative;
+}
 
+.corpo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 400px; /* largura fixa */
+  padding: 20px;  
+}
 
  /* estilos caixa de pesquisa */
 
@@ -85,15 +98,6 @@ input[type="submit"] {
   font-size: 14px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #eee;
-  padding: 20px;
-  text-align: center;
-}
 
 .search-container {
   display: flex; 
@@ -106,4 +110,70 @@ footer {
 }
 .search-container input[type=text] {
   margin-bottom: 0px;
+}
+
+
+ /* rodape */
+
+footer span {
+  display: block;
+  text-align: center;
+  margin-right: 20px; 
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  background: #f2f2f2;
+  border-top: 2px solid #e4e4e4;
+  line-height: 20px;
+  width: 99%;
+  font-size: 14px;
+
+}
+
+footer ul {
+  float: left;
+  max-width: 30%;
+  min-height: 1em;
+  padding-left: 30px;
+  margin: 5px;
+}
+
+footer ul li {
+  color: #666;
+  display: inline;
+  font-size: 10px;
+  margin: 5px;
+  white-space: nowrap;  
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+  
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .coluna {
+    width: 100%;
+    font-size: 14px; 
+  }
 }

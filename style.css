@@ -167,13 +167,18 @@ footer {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-
-
-
+/*config cell*/
 
 @media (max-width: 600px) {
   .coluna {
     width: 100%;
     font-size: 14px; 
+  }
+}
+
+/* Tela pequena */
+@media(max-width: 600px) {
+  .corpo {
+    width: 90%;
   }
 }
